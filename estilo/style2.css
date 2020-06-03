@@ -1,0 +1,512 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:"Open Sans";
+}
+
+.modal-container{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	left:0;
+    background: rgba(0,0,0,.5);
+	z-index: 999;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal{
+	position: relative;
+	background: white;
+	width: 50%;
+	min-width: 300px;
+	padding: 60px;
+	border:10px solid #988b7a;
+	box-shadow: 0 0 0 10px white;
+}
+
+.modal-container.mostrar{
+	display: flex;
+}
+
+.box-center{
+	background:black;
+	padding: 20px;
+	z-index: 5;
+	max-width: 600px;
+	width: 40%;
+	height: 400px;
+	position: relative;
+	top: 575px;
+	border-radius: 30px;
+    left: 45%;
+}
+
+@keyframes modal{
+	from{
+        opacity: 0;
+        transform: translate3d(0,-60px,0);
+	}
+	to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+	}
+}
+.mostrar .modal{
+	animation: modal .3s;
+}
+.img-jogo1{
+	position: relative;
+	z-index: 5;
+	width: 500px;
+	height: 500px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border:4px solid white;
+	left: 15%;
+	top:20px;
+	border:4px solid width;
+}
+.modal h2{
+	padding: 20px;
+	position: absolute;
+	margin-top:-60px;
+}
+.modal p{
+	margin-bottom: 30px;
+	top: 50px;
+	overflow-y: hidden;
+}
+
+.swiper {
+      background: #262626;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      z-index: 3;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 600px;
+      height: 350px;
+      top:-40px;
+      background: #fff;
+    }
+
+    .swiper-slide .detalhes{
+    	position: absolute;
+    	box-sizing: border-box;
+    	padding: 20px;
+    	top: 350px;
+       background: white;
+       align-self: center;
+       width: 100%;
+    }
+
+    .swiper-slide .detalhes h3{
+    	font-size: 20px;
+    	padding: 0;
+    	margin: 0;
+    	text-align: center;
+    	line-height: 20px;
+    }
+
+
+    .swiper-slide .detalhes p{
+        padding: 3px;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+    }
+    
+     .swiper-slide .banner-single1{
+     	width: 100%;
+     	height: 300px;
+     	overflow: hidden;
+     }
+     .swiper-slide .banner-single1 img{
+     	width: 100%;
+
+     }
+
+    .btn{
+    	position: absolute;
+    	width: 80px;
+    	height: 80px;
+    	border-radius: 50%;
+    	background:#b71c1c;
+        cursor: pointer;
+    	border:0;
+    	top: 730px;
+    	left: 90%;
+    	position: fixed;
+    	z-index: 999;
+    	text-align: center;
+    	color: white;
+    	text-transform: uppercase;
+    	line-height: 85px;
+    	letter-spacing: 3px;
+    	font-size: 10px;
+    }
+
+    .btn1{
+    	position: absolute;
+    	width: 80px;
+    	height: 80px;
+    	border-radius: 50%;
+    	background: linear-gradient(#e57373,#b71c1c,#e57373);
+        cursor: pointer;
+    	border:0;
+    	top: 750px;
+    	left: 10%;
+    	position: fixed;
+    	z-index: 999;
+    	text-align: center;
+    	color: white;
+    	text-transform: uppercase;
+    	line-height: 85px;
+    	letter-spacing: 3px;
+    	font-size: 10px;
+    }
+
+    .form2 input[type=text]{
+    	padding: 10px;
+    	border:2px solid black;
+    	width: 100%;
+    	border-radius: 5px;
+
+    }
+
+    .modal1{
+    	position: absolute;
+    	padding: 10px;
+    	width: 30%;
+    	height: 500px;
+    	top:30%;
+    	left: 65%;
+    	border-radius: 20px;
+    	display: none;
+    	background: linear-gradient(#0d47a1 30%,#e0f2f1 70%);
+    	z-index: 5;
+    	max-width: 400px;
+    	position: fixed;
+    }
+
+   
+     
+    .info{
+    	margin-left: 15%;
+    	margin-top:100px;
+    	background: white;
+    	padding: 10px;
+    	width: 70%;
+    	height: 30%;
+    	border-radius: 30px;
+    }
+
+    .info p{
+    	font-size: 25px;
+    	text-align: center;
+    }
+
+    .logo2{
+    	margin-bottom: 60px;
+    	width: 30%;
+    	height: 50px;
+    }
+
+    .social-bar{
+    	position: fixed;
+    	right: 0;
+    	top:35%;
+    	font-size: 1.5rem;
+    	display: flex;
+    	flex-direction: column;
+    	align-items: flex-end;
+    	z-index: 100;
+    }
+
+.icon  i{
+    	color: white;
+    	text-decoration: none;
+    	padding: .7rem;
+    	display: flex;
+    	width: 45px;
+    	transition: all .5%;
+    }
+
+    .facebook{
+    	background: #2E406E;
+    	border-radius: 1rem 0 0 0;
+        
+    }
+
+    .twitter{
+    	background: #339DC5;
+    	text-decoration: none;
+    	
+    }
+    .youtube{
+    	background: #E83028;
+    	text-decoration: none;
+    	
+    }
+
+    .instagram{
+    	background: #3F60A5;
+    	border-radius: 0 0 0 1rem;
+    	text-decoration: none;
+    	
+    }
+
+
+    
+
+    .icon:hover{
+    	padding-right: 3rem;
+    	border-radius: 1rem 0 0 1rem;
+    	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+    }
+
+    .enviar i{
+      font-size: 25px;
+      top:70%;
+      padding: 15px;
+      color:white;
+      position: absolute;
+      left:33%;
+    }
+
+    .iconev i{
+      font-size: 35px;
+      top:30%;
+      padding: 10px;
+      color:blue;
+      position: absolute;
+      left: 3%;
+    }
+
+    .icone1f i{
+    font-size: 20px;
+    display: inline-block;
+    top:13%;
+    padding: 10px;
+    color:blue;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left:28%;
+  }
+
+
+  .icone2f i{
+    font-size: 20px;
+    top:27%;
+    padding: 10px;
+    color:blue;
+    position: absolute;
+    left:28%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .icone3f i{
+        font-size: 25px;
+        top:42%;
+        padding: 10px;
+        color:blue;
+        position: absolute;
+        left:28%;
+        display: flex;
+       flex-wrap: wrap;
+    }
+
+    .icone4f i{
+        font-size: 25px;
+        top:77%;
+        padding: 15px;
+        color:white;
+        position: absolute;
+        left:46%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+   
+  
+@media screen and (max-width: 1024px){
+     .icone1f i{
+        display: inline-block;
+        top:12%;
+        left: 11%;
+        position: absolute;
+     }
+
+     .icone2f i{
+        top:28%;
+        left: 11%;
+     }
+
+     .icone3f i{
+        top:42%;
+        left: 11%;
+     }
+
+      .icone4f i{
+        left: 43%;
+         top: 76%;
+      }
+
+    .titulo  h2{
+        left: 17%;
+        font-size: 35px;
+        width: 65%;
+    }
+
+ 
+
+	.btn{
+	 	z-index: 7;
+	 	top:70%;
+	 	left: 10px;
+	 }
+
+	  .modal1{
+	 	width: 80%;
+	 	left: 5%;
+	 }
+
+
+}    
+
+@media screen and (max-width: 968px){
+      .icone1f i{
+        top:47%;
+        left: 11%;
+     }
+
+     .icone2f i{
+        top:74%;
+        left: 11%;
+     }
+
+     .icone3f i{
+        top:81%;
+        left: 11%;
+     }
+
+
+    
+	 .btn{
+	 	z-index: 7;
+	 	top:50%;
+	 	left: 10px;
+	 }
+
+	.modal{
+		width: 100%;
+	}
+	.modal h2{
+		font-size: 20px;
+	}
+	.img-jogo1{
+		width: 300px;
+		height: 300px;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+    .enviar i{
+      font-size: 25px;
+      top:70%;
+      padding: 15px;
+      color:white;
+      position: absolute;
+      left:30%;
+    }
+
+     .icone1f i{
+        top:13%;
+        -ms-top:13%;
+        left: 5%;
+     }
+
+     .icone2f i{
+        top:27%;
+        left: 5%;
+     }
+
+     .icone3f i{
+        top:42%;
+        left: 5%;
+     }
+
+      .icone4f i{
+        position: absolute;
+        left: 39%;
+         top: 77%;
+      }
+      
+     .titulo > h2{
+        left: 2%;
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+     }
+
+
+	 .btn{
+	 	z-index: 7;
+	 	top:50%;
+	 	left: 10px;
+	 }
+
+	 .modal1{
+	 	width: 100%;
+	 	left: 5%;
+	 }
+
+	
+	.box-center{
+		padding-top: 5px;
+		width: 100%;
+		max-width: 600px;
+		top: 400px;
+	}
+	.modal{
+		width: 75%;
+	}
+	.modal h2{
+		font-size: 20px;
+	}
+	.img-jogo1{
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 580px){
+   .enviar i{
+      font-size: 25px;
+      top:70%;
+      padding: 15px;
+      color:white;
+      position: absolute;
+      left:28%;
+    }
+}
